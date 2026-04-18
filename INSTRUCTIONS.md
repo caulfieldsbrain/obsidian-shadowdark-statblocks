@@ -13,9 +13,13 @@ Use the command palette to access all plugin features.
 ![Command Menu](assets/command-menu.png)
 
 **Common commands:**
+
 - Create Shadowdark monster note
+
 - Import Shadowdark monster from clipboard
+
 - Import multiple Shadowdark monsters from clipboard
+
 - Open Monster Browser
 
 ---
@@ -45,9 +49,13 @@ Import Shadowdark monster from clipboard
 ![Import Modal](assets/import-modal.png)
 
 Here you can:
+
 - Edit fields
+
 - Add tags
+
 - Adjust source
+
 - Confirm import
 
 ---
@@ -57,8 +65,11 @@ Here you can:
 Copy a full page of statblocks and run: Import multiple Shadowdark monsters from clipboard
 
 You’ll be guided through each monster with options to:
+
 - Import
+
 - Skip
+
 - Cancel
 
 A summary appears when finished.
@@ -70,9 +81,13 @@ A summary appears when finished.
 Open the browser with:![Browser](assets/browser.png)
 
 ### Features:
+
 - Search by name
+
 - Filter by source
+
 - Filter by tags
+
 - Filter by max level
 
 ---
@@ -116,8 +131,11 @@ Monster notes can be opened in new tabs for easy reference during sessions.
 ## 💡 Tips
 
 - Use bulk import for best efficiency when working from PDFs
+
 - Hover preview is great for quick reference during prep
+
 - Embeds are perfect for encounter notes
+
 - Tags help organize and filter your monsters effectively
 
 ---
@@ -125,8 +143,11 @@ Monster notes can be opened in new tabs for easy reference during sessions.
 ## 🐛 Troubleshooting
 
 - If a monster doesn’t import correctly, try cleaning up the copied text
+
 - Some PDFs format text inconsistently
+
 - Make sure the Monster Name is highlighted when copying from a PDF
+
 - Use single import for tricky statblocks
 
 ---
@@ -134,7 +155,9 @@ Monster notes can be opened in new tabs for easy reference during sessions.
 ## 🎯 Next Steps
 
 - Build encounter notes using embeds
+
 - Organize monsters with tags and sources
+
 - Use the browser for fast session prep
 
 ---
