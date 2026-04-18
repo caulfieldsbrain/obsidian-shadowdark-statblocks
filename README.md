@@ -172,7 +172,7 @@ Open an issue or share feedback — improvements are ongoing.
 
 ⸻
 
-##☕️ Buy me a coffee
+## Buy me a coffee
 [Buy me a coffee](https://buymeacoffee.com/caulfieldsbrain)
 
 
