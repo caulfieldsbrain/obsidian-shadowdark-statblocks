@@ -27,13 +27,13 @@ Designed for GMs who want fast workflows, clean formatting, and seamless integra
   - Source (remembers last used)
 - Reduces manual cleanup during imports
 
-### ⚠️ Duplicate Handling
+### Duplicate Handling
 - Single import:
   - Prompt to overwrite or create a copy
 - Bulk import:
   - Safe mode (creates copies automatically)
 
-### 📚 Monster Browser
+### Monster Browser
 - Search and filter monsters by:
   - Name
   - Source
@@ -42,7 +42,7 @@ Designed for GMs who want fast workflows, clean formatting, and seamless integra
 - Instant results
 - Hover preview for full statblock
 
-### 👁️ Live Statblock Rendering
+### Live Statblock Rendering
 Statblocks automatically render from frontmatter:
 
 - In monster notes
@@ -51,7 +51,7 @@ Statblocks automatically render from frontmatter:
 
 No extra steps required.
 
-### 🔗 Embeds Just Work
+### Embeds Just Work
 ```
 ![[Bittermold]]
 ```
@@ -59,7 +59,7 @@ Renders a full statblock inline in your notes.
 
 
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Create a Monster Note
 Use command: 
@@ -74,7 +74,7 @@ Copy a full PDF page → Use command:
 Use command: Open Monster Browser
 
 
-## 🧾 Monster Note Format
+## Monster Note Format
 
 Monster notes use YAML frontmatter:
 
@@ -107,7 +107,7 @@ tags:
 Statblocks render automatically from this.
 
 
-##📖 Commands
+## Commands
 	•	Insert Shadowdark monster block
 	•	Create Shadowdark monster note
 	•	Import Shadowdark monster from clipboard
@@ -116,7 +116,7 @@ Statblocks render automatically from this.
 	•	Edit current Shadowdark monster
 	•	Open Monster Browser
 	
-##📌 Notes on Importing
+## Notes on Importing
 	•	Works best with copied text from Shadowdark formatted PDFs
 	•	Handles:
 	•	Multiple monsters on one page
@@ -125,14 +125,14 @@ Statblocks render automatically from this.
 
 ⸻
 
-##🧪 Known Limitations
+## Known Limitations
 	•	PDF copy formatting varies by source
 	•	Extremely malformed text may fail to parse
 	•	Bulk import prioritizes safety (creates copies instead of overwriting)
 
 ⸻
 
-##🛠️ Settings
+## Settings
 	•	Monster folder location
 	•	Toggle statblock rendering
 	•	Hide/show frontmatter properties
@@ -140,7 +140,7 @@ Statblocks render automatically from this.
 
 ⸻
 
-##🔮 Roadmap
+## Roadmap
 
 v1.1 (Planned)
 	•	Encounter Builder
@@ -149,14 +149,14 @@ v1.1 (Planned)
 	•	Export to notes
 	•	Quantity controls
 
-###Future Ideas
+### Future Ideas
 	•	Initiative / combat tracker integration
 	•	Monster relationships / factions
 	•	Advanced filtering (multi-tag, alignment, etc.)
 
 ⸻
 
-###❤️ Built For GMs
+### Built For GMs
 
 This plugin is built to support fast, flexible prep for Shadowdark campaigns inside Obsidian.
 
@@ -164,7 +164,7 @@ If it saves you time at the table, it’s doing its job.
 
 ⸻
 
-###🐛 Feedback & Issues
+### Feedback & Issues
 
 Found a bug or have an idea?
 
@@ -176,7 +176,7 @@ Open an issue or share feedback — improvements are ongoing.
 [Buy me a coffee](https://buymeacoffee.com/caulfieldsbrain)
 
 
-##📜 License
+## License
 MIT License
 
 Copyright (c) 2026 Alex Lambert
