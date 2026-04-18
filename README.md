@@ -83,6 +83,9 @@ Copy a full PDF page → Use command:
 ### 4. Browse Your Monsters
 Use command: Open Monster Browser
 
+## Full Instructions Guide
+
+See [INSTRUCTIONS.md](INSTRUCTIONS.md) for a complete walkthrough with screenshots.
 
 ## Monster Note Format
 
