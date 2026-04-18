@@ -1,0 +1,11 @@
+{
+  "id": "shadowdark-statblocks",
+  "name": "Shadowdark Statblocks",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Create, import, and render Shadowdark monster stat blocks in Obsidian.",
+  "author": "caulfieldsbrain",
+  "authorUrl": "",
+  "fundingUrl": "https://buymeacoffee.com/caulfieldsbrain",
+  "isDesktopOnly": false
+}
