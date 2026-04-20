@@ -1,10 +1,10 @@
-# 🧭 Shadowdark Statblocks – Instruction Guide
+# Shadowdark Statblocks – Instruction Guide
 
 This guide walks you through the core features of the plugin with visual examples.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Open the Command Menu
 
@@ -24,7 +24,7 @@ Use the command palette to access all plugin features.
 
 ---
 
-## 🧾 Creating a Monster Note
+## Creating a Monster Note
 
 Create a new structured monster note using:
 
@@ -34,7 +34,7 @@ This generates a ready-to-use template with proper frontmatter.
 
 ---
 
-## 📥 Importing a Monster
+## Importing a Monster
 
 ### Step 1: Copy a statblock
 
@@ -60,7 +60,7 @@ Here you can:
 
 ---
 
-## 📦 Bulk Importing Monsters
+## Bulk Importing Monsters
 
 Copy a full page of statblocks and run: Import multiple Shadowdark monsters from clipboard
 
@@ -76,7 +76,7 @@ A summary appears when finished.
 
 ---
 
-## 📚 Using the Monster Browser
+## Using the Monster Browser
 
 Open the browser with:
 ```
@@ -97,7 +97,7 @@ Open Monster Browser
 
 ---
 
-## 👁️ Hover Preview
+## Hover Preview
 
 Hover over any monster link to preview the full statblock instantly.
 
@@ -105,7 +105,7 @@ Hover over any monster link to preview the full statblock instantly.
 
 ---
 
-## 🔗 Embedding Monsters
+## Embedding Monsters
 
 You can embed a monster directly into any note using:
 ```
@@ -125,7 +125,7 @@ Open any monster note to see the statblock rendered from its frontmatter.
 
 ---
 
-## 🗂️ Opening in a New Tab
+## Opening in a New Tab
 
 Monster notes can be opened in new tabs for easy reference during sessions.
 
@@ -133,7 +133,7 @@ Monster notes can be opened in new tabs for easy reference during sessions.
 
 ---
 
-## 💡 Tips
+## Tips
 
 - Use bulk import for best efficiency when working from PDFs
 
@@ -145,7 +145,7 @@ Monster notes can be opened in new tabs for easy reference during sessions.
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 - If a monster doesn’t import correctly, try cleaning up the copied text
 
@@ -157,7 +157,7 @@ Monster notes can be opened in new tabs for easy reference during sessions.
 
 ---
 
-## 🎯 Next Steps
+## Next Steps
 
 - Build encounter notes using embeds
 
@@ -167,7 +167,7 @@ Monster notes can be opened in new tabs for easy reference during sessions.
 
 ---
 
-## ❤️ Designed for Fast GM Workflows
+## Designed for Fast GM Workflows
 
 This plugin is built to minimize prep time and keep your focus on the table.
 
