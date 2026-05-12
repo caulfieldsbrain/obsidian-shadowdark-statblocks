@@ -13,10 +13,15 @@ export class ShadowdarkStatblocksSettingTab extends PluginSettingTab {
   const { containerEl } = this;
   containerEl.empty();
 
-  containerEl.createEl("h2", { text: "Shadowdark Statblocks Settings" });
+  new Setting(containerEl)
+    .setName("Shadowdark statblocks settings")
+    .setHeading();
 
   // ===== DISPLAY SECTION =====
-  containerEl.createEl("h3", { text: "Display" });
+  
+  new Setting(containerEl)
+    .setName("Display")
+    .setHeading();
 
   new Setting(containerEl)
     .setName("Compact statblock mode")
@@ -59,7 +64,7 @@ export class ShadowdarkStatblocksSettingTab extends PluginSettingTab {
 
   new Setting(containerEl)
     .setName("Render frontmatter monsters")
-    .setDesc("Render statblocks from monster note frontmatter in Reading view.")
+    .setDesc("Render statblocks from monster note frontmatter in reading view.")
     .addToggle((toggle) =>
       toggle
         .setValue(this.plugin.settings.renderFrontmatterMonsters)
@@ -72,7 +77,7 @@ export class ShadowdarkStatblocksSettingTab extends PluginSettingTab {
 
   new Setting(containerEl)
     .setName("Hide monster properties")
-    .setDesc("Hide Obsidian's native Properties section in Reading view for monster notes.")
+    .setDesc("Hide Obsidian's native properties section in reading view for monster notes.")
     .addToggle((toggle) =>
       toggle
         .setValue(this.plugin.settings.hideMonsterProperties)
@@ -84,7 +89,9 @@ export class ShadowdarkStatblocksSettingTab extends PluginSettingTab {
     );
 
   // ===== FILES SECTION =====
-  containerEl.createEl("h3", { text: "Files" });
+  new Setting(containerEl)
+    .setName("Files")
+    .setHeading();
 
   new Setting(containerEl)
     .setName("Monster folder")
