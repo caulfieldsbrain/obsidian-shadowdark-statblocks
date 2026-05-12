@@ -17,7 +17,7 @@ const UPPERCASE_NON_NAME_WORDS = new Set([
 ]);
 
 function cleanNameToken(word: string): string {
-  return word.replace(/[,'’\-]/g, "");
+  return word.replace(/[,'’-]/g, "");
 }
 
 function isUppercaseNameToken(word: string): boolean {
@@ -42,7 +42,7 @@ function normalizeEmbeddedMonsterNames(input: string): string {
   // "... direction. DUNEFIEND Demons that appear ..."
   // => "... direction.\nDUNEFIEND\nDemons that appear ..."
   text = text.replace(
-    /([.!?])\s+([A-Z][A-Z0-9,'’\-]*(?:\s+[A-Z][A-Z0-9,'’\-]*){0,3})\s+([A-Z][a-z][^\r\n]*)/g,
+    /([.!?])\s+([A-Z][A-Z0-9,'’-]*(?:\s+[A-Z][A-Z0-9,'’-]*){0,3})\s+([A-Z][a-z][^\r\n]*)/g,
     (match, punct, maybeName, descriptionStart) => {
       if (!looksLikeMonsterNameInline(maybeName, 1)) {
         return match;
@@ -61,7 +61,7 @@ function normalizeEmbeddedMonsterNames(input: string): string {
   // This requires 2+ uppercase words so we do not accidentally rip out
   // DEX / CHA / CON / etc.
   text = text.replace(
-    /([a-z0-9)\]])\s+([A-Z][A-Z0-9,'’\-]*(?:\s+[A-Z][A-Z0-9,'’\-]+){1,3})\s+([a-z][^.\r\n]{0,30}[.)]?)/g,
+    /([a-z0-9)\]])\s+([A-Z][A-Z0-9,'’-]*(?:\s+[A-Z][A-Z0-9,'’-]+){1,3})\s+([a-z][^.\r\n]{0,30}[.)]?)/g,
     (match, prefixEnd, maybeName, suffix) => {
       if (!looksLikeMonsterNameInline(maybeName, 2)) {
         return match;
@@ -77,7 +77,7 @@ function normalizeEmbeddedMonsterNames(input: string): string {
   // "... wooden stake while at 0 HP. SNAKE, COBRA"
   // => "... wooden stake while at 0 HP.\nSNAKE, COBRA"
   text = text.replace(
-    /([.!?])\s+([A-Z][A-Z0-9,'’\-]*(?:\s+[A-Z][A-Z0-9,'’\-]*){0,3})$/gm,
+    /([.!?])\s+([A-Z][A-Z0-9,'’-]*(?:\s+[A-Z][A-Z0-9,'’-]*){0,3})$/gm,
     (match, punct, maybeName) => {
       if (!looksLikeMonsterNameInline(maybeName, 1)) {
         return match;
@@ -113,7 +113,7 @@ export function splitRawShadowdarkBlocks(input: string): string[] {
   };
 
   const isAbilityLead = (line: string): boolean => {
-    return /^[A-Z][A-Za-z0-9'’\- ]{0,40}\./.test(line);
+    return /^[A-Z][A-Za-z0-9'’-]{0,40}\./.test(line);
   };
 
   const isDescriptionLike = (line: string): boolean => {
