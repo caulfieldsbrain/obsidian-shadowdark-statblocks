@@ -74,7 +74,9 @@ function getNavAction(
 function stopKeyEvent(evt: KeyboardEvent): void {
   evt.preventDefault();
   evt.stopPropagation();
-  (evt as any).stopImmediatePropagation?.();
+  if ("stopImmediatePropagation" in evt) {
+    evt.stopImmediatePropagation();
+  }
 }
 
 function normalizeLines(value: string): string[] {
@@ -504,17 +506,14 @@ export class ImportPreviewModal extends Modal {
 
     titleEl.setText(
       this.mode === "edit"
-        ? "Edit Shadowdark Monster"
-        : "Import Shadowdark Monster"
+        ? "Edit Shadowdark monster"
+        : "Import Shadowdark monster"
     );
 
     contentEl.empty();
     contentEl.addClass("sd-import-preview-modal");
 
     this.modalEl.addClass("sd-import-preview-modal-shell");
-    this.modalEl.style.width = "min(1280px, 94vw)";
-    this.modalEl.style.maxWidth = "94vw";
-    this.modalEl.style.height = "min(90vh, 920px)";
 
     const intro = document.createElement("p");
     intro.className = "sd-import-preview-description";
@@ -562,7 +561,7 @@ export class ImportPreviewModal extends Modal {
     layout.appendChild(previewCol);
 
     const previewHeading = document.createElement("h3");
-    previewHeading.textContent = "Live Preview";
+    previewHeading.textContent = "Live preview";
     previewCol.appendChild(previewHeading);
 
     this.previewEl = document.createElement("div");
@@ -973,7 +972,7 @@ export class ImportPreviewModal extends Modal {
     new Setting(formCol)
       .addButton((button) =>
         button
-          .setButtonText("Fix Common Issues")
+          .setButtonText("Fix common issues")
           .setTooltip(
             "Cleans formatting: fixes spacing, dice typos (1dd8 → 1d8), capitalizes names/descriptions, and normalizes traits, spells, and attacks."
           )
@@ -983,7 +982,7 @@ export class ImportPreviewModal extends Modal {
       )
       .addButton((button) =>
         button
-          .setButtonText(this.mode === "edit" ? "Update Note" : "Create Note")
+          .setButtonText(this.mode === "edit" ? "Update note" : "Create note")
           .setCta()
           .onClick(async () => {
             if (!this.monster.name.trim()) {
@@ -1025,8 +1024,5 @@ export class ImportPreviewModal extends Modal {
   onClose(): void {
     this.contentEl.empty();
     this.modalEl.removeClass("sd-import-preview-modal-shell");
-    this.modalEl.style.width = "";
-    this.modalEl.style.maxWidth = "";
-    this.modalEl.style.height = "";
   }
 }
