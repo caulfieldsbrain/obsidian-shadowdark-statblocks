@@ -597,10 +597,6 @@
   transition: opacity 80ms ease, transform 80ms ease;
 }
 
-.sd-monster-browser-hover-card.is-visible {
-  display: block;
-}
-
 .sd-monster-browser-hover-card-inner {
   border: 1px solid var(--background-modifier-border);
   border-radius: 10px;
