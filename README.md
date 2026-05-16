@@ -1,6 +1,6 @@
 # Shadowdark Statblocks
 
-A useful tool for mporting, managing, and rendering **Shadowdark RPG monster statblocks** directly in your notes.
+A useful tool for importing, managing, and rendering **Shadowdark RPG monster statblocks** directly in your notes.
 
 Designed for GMs who want fast workflows, clean formatting, and seamless integration into session prep.
 
