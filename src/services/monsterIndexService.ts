@@ -98,10 +98,10 @@ export async function getSuggestedOtherSources(
   return [...sources].sort((a, b) => a.localeCompare(b));
 }
 
-export async function getAllMonsterIndexEntries(
+export function getAllMonsterIndexEntries(
   app: App,
   monsterFolder: string
-): Promise<MonsterIndexEntry[]> {
+): MonsterIndexEntry[] {
   const folderPath = normalizePath(monsterFolder);
 
   const files = app.vault
@@ -122,7 +122,11 @@ export async function getAllMonsterIndexEntries(
     results.push({
       file,
       name: typeof frontmatter.name === "string" ? frontmatter.name : file.basename,
-      level: frontmatter.level != null ? String(frontmatter.level) : "",
+      level:
+        typeof frontmatter.level === "string" ||
+        typeof frontmatter.level === "number"
+          ? String(frontmatter.level)
+          : "",
       alignment:
         typeof frontmatter.alignment === "string" ? frontmatter.alignment : "",
       source: typeof frontmatter.source === "string" ? frontmatter.source : "",
